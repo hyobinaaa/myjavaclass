@@ -18,6 +18,7 @@ public class Math {
         Math obj = new Math();
         System.out.println(obj.square(10));
         System.out.println(obj.square(3.14));
+        sda
         
     }
     
