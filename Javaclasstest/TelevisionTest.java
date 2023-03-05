@@ -13,7 +13,7 @@ class Television{ // 텔레비젼 이라는 객체
 
 public class TelevisionTest {
     public static void main(String[] args) {
-
+        // myTv 와  yourTv는 별개의 객체를 가르킨다.
         Television myTV = new Television();
 
         myTV.channel = 7;
