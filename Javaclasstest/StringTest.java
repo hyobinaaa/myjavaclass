@@ -4,7 +4,7 @@ public class StringTest {
         // string 객체는 imutable입니다. mutable이 아닙니다.
        // 이말은 string 객체 값으로 변경할수 없다.
 
-       
+
     public static void main(String[] args) {
         String proverb = "A barking dog"; // new 연산자 생략
         String s1 , s2 , s3 , s4; // 참조변수로서 메소드에서 반환된 참조된 값을 받는다.
@@ -17,11 +17,30 @@ public class StringTest {
         s3 = proverb.substring(2,5);  // 부분 문자열 추출
         s4 = proverb.toUpperCase();  //대문자로 변환
 
+     
+
         System.out.println(s1);
         System.out.println(s2);
         System.out.println(s3);
         System.out.println(s4);
 
+
+        int x =20;
+        System.out.println("결과값은" + x);
+
+        System.out.println("100" + x);
+        System.out.println(100 + x);
+
+
+        String s = "1234";
+
+        int n = Integer.parseInt(s);
+
+        double d = Double.parseDouble(s);
+
+        Float.parseFloat(s);
+
+        Long.parseLong(s);
 
     }
     
