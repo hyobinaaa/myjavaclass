@@ -1,6 +1,10 @@
 package Javaclasstest;
 
 public class StringTest {
+        // string 객체는 imutable입니다. mutable이 아닙니다.
+       // 이말은 string 객체 값으로 변경할수 없다.
+
+       
     public static void main(String[] args) {
         String proverb = "A barking dog"; // new 연산자 생략
         String s1 , s2 , s3 , s4; // 참조변수로서 메소드에서 반환된 참조된 값을 받는다.
