@@ -13,4 +13,14 @@ public class SafeArray {
         System.out.println("잘못된 인덱스:" + index);
         
     } 
+    public static void main(String[] args) {
+        SafeArray  array = new SafeArray();
+        
+        array.createArray(10);
+
+        array.put(2, 10);
+        array.put(10, 100);
+
+       
+    }
 }
