@@ -8,8 +8,12 @@ public class SafeArray {
     }
 
     public void put(int index , int value){
-        if (index >= 0 && index < a.length)
+        if (index >= 0 && index < a.length){
             a[index] = value;
+            return ;
+
+        }
+            
         System.out.println("잘못된 인덱스:" + index);
         
     } 
