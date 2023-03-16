@@ -3,9 +3,28 @@
 package Javaclasstest;
 
 public class MyCounter {
-    int value = 0;
-    void inc(MyCounter ctr){
-        ctr.value = ctr.value + 1;
+    private int counter;
+
+    MyCounter(){
+        counter = 1;
+    }
+
+    public void increase(){
+        counter++;
+
+    }
+
+    public int getCounter(){
+        return counter;
     }
     
+    public static void main(String[] args) {
+        MyCounter cntobj1 = new MyCounter();
+        MyCounter cntobj2 = new MyCounter();
+
+        cntobj2.increase();
+
+        System.out.println("cntobj1의 counter" + cntobj1.getCounter());
+        System.out.println("cntobj2의 counter" + cntobj2.getCounter());
+    }
 }
