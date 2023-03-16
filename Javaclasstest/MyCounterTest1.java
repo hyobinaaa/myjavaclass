@@ -3,12 +3,30 @@
 package Javaclasstest;
 
 public class MyCounterTest1 {
+    private int counter; 
+
+    MyCounterTest1(){
+        counter = 1;
+    }
+    MyCounterTest1(int value){
+        counter = value;
+    }
+
+    public void increase() {
+        counter++;
+    }
+
+    public int getCounter(){
+        return counter;
+    }
     public static void main(String[] args) {
-        MyCounter obj  = new MyCounter();
-       System.out.println("obj.value = " + obj.value);
-       obj.inc(obj);
-       System.out.println("obj.value = " + obj.value);
+        MyCounterTest1 cntobj1 = new MyCounterTest1(100);
+        MyCounterTest1 cntobj2 = new MyCounterTest1(200);
+
+        System.out.println("cntobj1 의 counter:" + cntobj1.getCounter());
+        System.out.println("cntobj2 의 counter:" + cntobj2.getCounter());
+    }
         
     }
     
-}
+
