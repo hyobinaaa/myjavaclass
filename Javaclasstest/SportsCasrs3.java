@@ -7,6 +7,8 @@ public class SportsCasrs3 {
         obj.speed = 10;
         obj.setSpeed(60);
         obj.setTurbo(true);
+
+        
     }
     
 }
