@@ -30,6 +30,7 @@ class Reactangle extends Shape{
 
 public class AbstractTest {
     public static void main(String[] args) {
+        // Shape shape = new Shape();
         Ractangle rectangle = new Ractangle();
         rectangle.draw();
 
