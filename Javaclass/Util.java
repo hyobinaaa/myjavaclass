@@ -15,8 +15,15 @@ public class Util {
                     minIdx = j;
                 }
             } 
+
+            // minIdx의 값과 i의 값을 교환
+            swap(i , minIdx, values);
         }
         
     }
-    
+    private static void  swap(int idx1, int idx2, int[] values){
+        int tmp = values[idx1];
+        values[idx1] = values[idx2];
+        values[idx2] = tmp;
+    }
 }
