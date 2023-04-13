@@ -13,6 +13,13 @@ public class CarTest {
         Car car2 = new Car("현대" , "그랜저");
         System.out.println(car1.equals(car2));
         System.out.println(car1 == car2);
+        Car car3 = null;
+
+        System.out.println(car1.equals(car3));
+
+    
+
+        System.out.println("프로그램을 종료합니다");
         
     }
 }
