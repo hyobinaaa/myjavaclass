@@ -1,6 +1,6 @@
 package Interface;
 
-public class Rectangle  {
+public interface Rectangle  {
    
     
     
