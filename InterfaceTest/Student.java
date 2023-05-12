@@ -7,7 +7,7 @@ public class Student implements Comparable{
 private String name;
 private String dept;
 
-Student(String name, String dept) {
+public Student(String name, String dept) {
   this.name = name;
   this.dept = dept;
 }
