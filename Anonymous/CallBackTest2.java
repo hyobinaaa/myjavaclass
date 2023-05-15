@@ -19,7 +19,31 @@ public class CallBackTest2 {
 
 
 
-        cb.remoteControl(null);
-    };
+        new RemoteControl() {
+            @Override
+            public void turnOn() {
+              System.out.println("파나소닉 테레비 켜짐 변수없음");
+            }
     
+            @Override
+            public void turnOff() {
+              System.out.println("파나소닉 테레비 꺼짐 변수없음");
+            }
+          }
+        ;
+    
+        RemoteControl rm = new RemoteControl() {
+          @Override
+          public void turnOn() {
+            System.out.println("파나소닉 테레비 켜짐 변수있음");
+          }
+    
+          @Override
+          public void turnOff() {
+            System.out.println("파나소닉 테레비 꺼짐 변수있음");
+          }
+        };
+    
+        cb.remoteControl(rm);
+    }
 }
