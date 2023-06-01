@@ -28,24 +28,31 @@ public class Test2 {
         // printPerson 메소드를 호출해라
         // 단, 이 메소드의 의해 출력되는 Person 객체는 성별이 남자만 객체이어야 한다
 
+        // 위와 똑같이 성별이 남자인 객체면 출력하도록
+        // printPerson 메서드를 호출하되, 무명클래스를 이용해봐라
+        // CheckPerson 인터페이스를 구현하는 무명클래스를 생성해 printPersons 메서드를 호출하면 된다
+        // 클래스 선언과(정의와) 객체생성을 동시에 할 수있는 방법이 무명클래스 
+
+   
+
         
 
 
     }
 
     class Person{
-        private String name;
+        private String person;
         private String gender;
         
         public Person( String name, String gender){
-            this.name =name;
+            this.person =person;
             this.gender = gender;
 
         }
 
 
         public String getName(){
-            return name;
+            return person;
         }
 
         public String getGender(){
