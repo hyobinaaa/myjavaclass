@@ -27,7 +27,7 @@ public LocalDate getBirthDate(){
 public String getEmailAddress(){
     return emailAddress;
 }
-public String getGender(){
+public Sex getGender(){
     return gender;
 }
 
@@ -37,7 +37,7 @@ public int getAge() {
    
    // method chaining  : 메소드 호출을 쇠사슬이 연결된 것처럼, 이어서 쭉 호출하는 것
 
-   return Period.between(birthDate, LocalDate.now().getYear());
+   return Period.between(birthDate, LocalDate.now()).getYears();
 
 
 }
