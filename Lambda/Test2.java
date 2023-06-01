@@ -33,6 +33,17 @@ public class Test2 {
         // CheckPerson 인터페이스를 구현하는 무명클래스를 생성해 printPersons 메서드를 호출하면 된다
         // 클래스 선언과(정의와) 객체생성을 동시에 할 수있는 방법이 무명클래스 
 
+        printPerson(
+            list,
+            new CheckPerson(){
+                @Override
+                public boolean test(Person P){
+                    return P.getGender() == Sex.MALE;
+                }
+        
+            }
+        );
+
    
 
         
@@ -40,25 +51,7 @@ public class Test2 {
 
     }
 
-    class Person{
-        private String person;
-        private String gender;
-        
-        public Person( String name, String gender){
-            this.person =person;
-            this.gender = gender;
 
-        }
-
-
-        public String getName(){
-            return person;
-        }
-
-        public String getGender(){
-            return gender;
-        }
-    }
     // collection framework : List, Set, Map, Stack, Queue
     // collection framework는 여러 개의 값을 저장하는 자바의 자료구조
     // 이 자료구조에 들어갈 수 있는 원소 타입을 자바의 generic 이라는 기능을 이용해 지정할 수 있다
@@ -111,7 +104,10 @@ interface CheckPerson{
 }
 
 class CheckPersonMale18to25 implements CheckPerson{
-    return p.getGender() == Sex.MALE && p.getAge() >= 18 && p.getAge() <= 25;
+    @Override
+    public boolean test(Person p){
+        return p.getGender() == Sex.MALE && p.getAge() >= 18 && p.getAge() <= 25;
+    }
 }
 
 }
