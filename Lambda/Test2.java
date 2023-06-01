@@ -60,5 +60,23 @@ public static void printPersonWithAgeRange(List<Person> list, int low, int high)
     
     }
 }
+
+public static void printPerson(List <Person> list, CheckPerson tester){
+    for(Person p : list){
+        if(tester.test(p)){
+            p.printPerson();
+            System.out.println();
+        }
+    }
+}
+
+interface CheckPerson{
+    boolean test(Person p);
+}
+
+class CheckPersonMale18to25 implements CheckPerson{
+    return p.getGender() == Sex.MALE && p.getAge() >= 18 && p.getAge() <= 25;
+}
+
 }
 
