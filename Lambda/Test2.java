@@ -22,6 +22,35 @@ public class Test2 {
 
 
         printPersonOlderThan(list, 23);
+
+
+        // CheckPerson 인터페이스를 implements 하는 클래스를 하나 생성해서
+        // printPerson 메소드를 호출해라
+        // 단, 이 메소드의 의해 출력되는 Person 객체는 성별이 남자만 객체이어야 한다
+
+        
+
+
+    }
+
+    class Person{
+        private String name;
+        private String gender;
+        
+        public Person( String name, String gender){
+            this.name =name;
+            this.gender = gender;
+
+        }
+
+
+        public String getName(){
+            return name;
+        }
+
+        public String getGender(){
+            return gender;
+        }
     }
     // collection framework : List, Set, Map, Stack, Queue
     // collection framework는 여러 개의 값을 저장하는 자바의 자료구조
