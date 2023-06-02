@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.function.Predicate;;
 
 public class Test2 {
+    private static Object persons;
+
+
     public static void main(String[] args) {
 
         Person p1 = new Person("홍길동", LocalDate.of(2000, 1, 4 ), "gdhong@gmail.com" , Sex.MALE);
@@ -43,8 +46,35 @@ public class Test2 {
         
             }
         );
+            /*
+            1. 람다식은 이름없는 메소드라 할수있음
+            2. 람다식을 이용하는 이유는 간결하기 떄문
+            3. 람다식은 함수형 프로그래밍을 자바에 도입한것
+            4. 람다식은 오직 하나의 추상 메소드를 가지는 인터페이스 타입의 객체
+            5. 메소드의 인자로 전달될수있음
+            6. 람다식의 문법
+            (arg1, arg2, ....) -> {body}
 
-   
+            7. 위의 무명 클래스를 람다식으로 구현해보자
+            8. printPersons(list, (p) -> {return p.getGender() == Sex.MALE;});
+
+            9. printPersons(list, (Person p) -> {return p.getGender() == Sex.MALE;});
+
+            
+            
+
+             printPerson(list, (p) -> {
+                 System.out.println(p.getName());
+                 return p.getAge() >= 30;
+             });
+             람다식의 매게변수가 오직 하나일 떄는 매게변수를 둘러싸는 () 생략할 수 있다.
+             */
+            
+            // 람다식을 이용해서 printPersons 메소들를 호출하고,
+            // 그 결과로 나이 20에서 30살 사이의 여자이지만 출력되도록 구현해라
+
+            printPerson( list, p ->  p.getGender() == Sex.FEMALE && p.getAge() >= 20 && p.getAge() <= 30 );
+
 
         
 
