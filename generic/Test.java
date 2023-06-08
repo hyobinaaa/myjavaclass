@@ -29,6 +29,9 @@ public class Test {
     Object v = strBox.getValue();
     int idx = ((String)v).indexOf("우리나라");
     System.out.println(((String)v).substring(idx));
+
+    int val = (int)strBox.getValue();
+    System.out.println("프로그램을 종료합니다");
     }
     
 }
