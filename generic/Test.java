@@ -32,6 +32,9 @@ public class Test {
 
     int val = (int)strBox.getValue();
     System.out.println("프로그램을 종료합니다");
+
+    /*문제점 */
+    //  1. 값을 뺴서 쓸 떄 명시적 타입 캐스팅 을 해야한다 => 귀찮다. 런타임 오류 발생 간으
     }
     
 }
