@@ -7,6 +7,8 @@ public class GenericTest2 {
 
         // Generic 클래스의 타입 파라미터 값으로는 반드시 참조형 타입이 와야한다
         // 기초자료형(Primitive type)은 절대 올 수없다
+        // GenericPair<String, int> gp2 = new GenericPair<> ("고길동" , 30);
+        // 타입 파라미터로 기초자료형의 배열은 올 수 있나?
         
         GenericPair<String, Integer> pair1 = new GenericPair<>("Hello", 123);
         
