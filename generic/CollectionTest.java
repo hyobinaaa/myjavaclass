@@ -16,7 +16,16 @@ public class CollectionTest {
             System.out.println(name); 
         }
         
-        
+        ArrayList<Integer> ages = new ArrayList<>();
+        ages.add(10);
+        ages.add(18);
+        ages.add(20);
+        ages.add(25);
+        ages.add(9);
+
+        for(int age : ages) {
+            System.out.println(age);
+        }
     
 }
 }
